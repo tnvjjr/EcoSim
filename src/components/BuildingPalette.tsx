@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from 'react';
 import { BUILDING_CATEGORIES, BUILDINGS, Building, getCategoryBuildings, getCompatibilityTips } from '@/utils/buildings';
 import BuildingItem from './BuildingItem';
@@ -56,9 +55,9 @@ const BuildingPalette: React.FC<BuildingPaletteProps> = ({ onBuildingDragStart, 
   };
 
   return (
-    <div className="h-full flex flex-col glass-panel rounded-lg overflow-hidden shadow-elegant animate-fade-in">
+    <div className="h-full flex flex-col glass-panel rounded-lg overflow-hidden shadow-elegant animate-fade-in text-black">
       <div className="p-4 border-b border-border/40 bg-gradient-to-b from-white to-muted/30">
-        <h2 className="text-lg font-medium mb-2 flex items-center text-primary-foreground">
+        <h2 className="text-lg font-medium mb-2 flex items-center text-black">
           <LayersIcon size={18} className="mr-2 text-primary" />
           Building Palette
         </h2>
